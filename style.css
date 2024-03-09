@@ -1,0 +1,20 @@
+body{
+    background-color: black;
+}
+.myBox{
+    background-color: brown;
+    /* display: flex; */
+    /* width: 500px; */
+    /* height: 500px; */
+
+}
+
+
+.box{
+    height: 100px;
+    width: 100px;
+    position: relative;
+    background-color: bisque;
+    z-index: 1;
+    padding: 5px;
+}
