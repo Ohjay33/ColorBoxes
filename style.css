@@ -1,20 +1,39 @@
 body{
     background-color: black;
 }
-.myBox{
-    background-color: brown;
-    /* display: flex; */
-    /* width: 500px; */
-    /* height: 500px; */
 
-}
-
-
-.box{
-    height: 100px;
+.box {
     width: 100px;
-    position: relative;
-    background-color: bisque;
-    z-index: 1;
-    padding: 5px;
+    height: 100px;
+    background-color:black; /* Initial color */
+    transition: background-color 0.3s ease; /* Smooth transition */
+    display: inline-block;
+    /* margin: 10px; */
 }
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+}
+
+.main{
+    width: 830px;
+    border-style: solid;
+    border-color: grey;
+    border-width: 2px;
+
+}
+
+h1{
+    color: beige;
+    font-family: "Rubik Glitch";
+}
+
+button{
+    height: 75px;
+    width: 75px;
+    border-radius: 15%;
+}
+

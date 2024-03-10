@@ -1,181 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rubik Glitch">
+
     <title>Color Boxes</title>
+
 </head>
+
 <body>
-    <main>
-        <div class="myBox">
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-
+    <div class="container">
+        <h1>Hover and Get Random Color</h1>
+        <button onclick="refreshPage()">Refresh</button>
+        <br>
+        <div class="main">
+            <div class="box" onmouseover="changeColor(this)"></div>
+            <div class="box" onmouseover="changeColor(this)"></div>
+            <div class="box" onmouseover="changeColor(this)"></div>
+            <div class="box" onmouseover="changeColor(this)"></div>
+            <div class="box" onmouseover="changeColor(this)"></div>
+            <div class="box" onmouseover="changeColor(this)"></div>
+            <div class="box" onmouseover="changeColor(this)"></div>
+            <div class="box" onmouseover="changeColor(this)"></div>
+            <div class="box" onmouseover="changeColor(this)"></div>
+            <div class="box" onmouseover="changeColor(this)"></div>
+            <div class="box" onmouseover="changeColor(this)"></div>
+            <div class="box" onmouseover="changeColor(this)"></div>
+            <div class="box" onmouseover="changeColor(this)"></div>
+            <div class="box" onmouseover="changeColor(this)"></div>
+            <div class="box" onmouseover="changeColor(this)"></div>
+            <div class="box" onmouseover="changeColor(this)"></div>
+            <div class="box" onmouseover="changeColor(this)"></div>
+            <div class="box" onmouseover="changeColor(this)"></div>
+            <div class="box" onmouseover="changeColor(this)"></div>
+            <div class="box" onmouseover="changeColor(this)"></div>
+            <div class="box" onmouseover="changeColor(this)"></div>
+            <div class="box" onmouseover="changeColor(this)"></div>
+            <div class="box" onmouseover="changeColor(this)"></div>
+            <div class="box" onmouseover="changeColor(this)"></div>
+            <div class="box" onmouseover="changeColor(this)"></div>
+            <div class="box" onmouseover="changeColor(this)"></div>
+            <div class="box" onmouseover="changeColor(this)"></div>
+            <div class="box" onmouseover="changeColor(this)"></div>
+            <div class="box" onmouseover="changeColor(this)"></div>
+            <div class="box" onmouseover="changeColor(this)"></div>
+            <div class="box" onmouseover="changeColor(this)"></div>
+            <div class="box" onmouseover="changeColor(this)"></div>
+            <div class="box" onmouseover="changeColor(this)"></div>
+            <div class="box" onmouseover="changeColor(this)"></div>
+            <div class="box" onmouseover="changeColor(this)"></div>
+            <div class="box" onmouseover="changeColor(this)"></div>
+            <div class="box" onmouseover="changeColor(this)"></div>
+            <div class="box" onmouseover="changeColor(this)"></div>
+            <div class="box" onmouseover="changeColor(this)"></div>
+            <div class="box" onmouseover="changeColor(this)"></div>
+            <div class="box" onmouseover="changeColor(this)"></div>
+            <div class="box" onmouseover="changeColor(this)"></div>
+            <div class="box" onmouseover="changeColor(this)"></div>
+            <div class="box" onmouseover="changeColor(this)"></div>
+            <div class="box" onmouseover="changeColor(this)"></div>
+            <div class="box" onmouseover="changeColor(this)"></div>
+            <div class="box" onmouseover="changeColor(this)"></div>
+            <div class="box" onmouseover="changeColor(this)"></div>
+            <div class="box" onmouseover="changeColor(this)"></div>
+            <div class="box" onmouseover="changeColor(this)"></div>
+            <div class="box" onmouseover="changeColor(this)"></div>
+            <div class="box" onmouseover="changeColor(this)"></div>
+            <div class="box" onmouseover="changeColor(this)"></div>
+            <div class="box" onmouseover="changeColor(this)"></div>
+            <div class="box" onmouseover="changeColor(this)"></div>
+            <div class="box" onmouseover="changeColor(this)"></div>
+            <div class="box" onmouseover="changeColor(this)"></div>
+            <div class="box" onmouseover="changeColor(this)"></div>
+            <div class="box" onmouseover="changeColor(this)"></div>
+            <div class="box" onmouseover="changeColor(this)"></div>
+            <div class="box" onmouseover="changeColor(this)"></div>
+            <div class="box" onmouseover="changeColor(this)"></div>
+            <div class="box" onmouseover="changeColor(this)"></div>
+            <div class="box" onmouseover="changeColor(this)"></div>
+            <div class="box" onmouseover="changeColor(this)"></div>
+            <div class="box" onmouseover="changeColor(this)"></div>
+            <div class="box" onmouseover="changeColor(this)"></div>
+            <div class="box" onmouseover="changeColor(this)"></div>
+            <div class="box" onmouseover="changeColor(this)"></div>
+            <div class="box" onmouseover="changeColor(this)"></div>
+            <div class="box" onmouseover="changeColor(this)"></div>
+            <div class="box" onmouseover="changeColor(this)"></div>
+            <div class="box" onmouseover="changeColor(this)"></div>
+            <div class="box" onmouseover="changeColor(this)"></div>
+            <div class="box" onmouseover="changeColor(this)"></div>
+            <div class="box" onmouseover="changeColor(this)"></div>
+            <div class="box" onmouseover="changeColor(this)"></div>
+            <div class="box" onmouseover="changeColor(this)"></div>
+            <div class="box" onmouseover="changeColor(this)"></div>
+            <div class="box" onmouseover="changeColor(this)"></div>
+            <div class="box" onmouseover="changeColor(this)"></div>
+            <div class="box" onmouseover="changeColor(this)"></div>
+            <div class="box" onmouseover="changeColor(this)"></div>
+            <div class="box" onmouseover="changeColor(this)"></div>
+            <div class="box" onmouseover="changeColor(this)"></div>
+            <div class="box" onmouseover="changeColor(this)"></div>
+            <div class="box" onmouseover="changeColor(this)"></div>
+            <div class="box" onmouseover="changeColor(this)"></div>
         </div>
+    </div>
 
-
-    </main>
-    
+    <script src="script.js"></script>
 </body>
+
 </html>
