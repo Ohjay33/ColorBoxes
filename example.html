@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hover and Get Random Color</title>
+    <style>
+        /* Style for the box */
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: #ccc; /* Initial color */
+            transition: background-color 0.3s ease; /* Smooth transition */
+            display: inline-block;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Hover and Get Random Color</h1>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            // Function to generate a random color
+            function randomColor() {
+                return '#' + Math.random().toString(16).slice(2, 8);
+            }
+
+            // Event handler for mouse enter
+            $(".box").mouseenter(function() {
+                // Change background color to a random color
+                $(this).css('background-color', randomColor());
+            });
+        });
+    </script>
+</body>
+</html>
